@@ -109,21 +109,21 @@ export default function Contact() {
                   stiffness: 260,
                   damping: 22,
                 }}
-                className="w-full max-w-md"
+                className="w-full max-w-md mx-4 sm:mx-0"
               >
-                <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-[#111111]/95 backdrop-blur-xl p-7 shadow-[0_0_60px_rgba(168,85,247,0.25)]">
+                <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-[#111111]/95 backdrop-blur-xl p-5 sm:p-7 shadow-[0_0_60px_rgba(168,85,247,0.25)]">
                   {/* Glow Effect */}
                   <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
 
                   {/* Header */}
-                  <div className="relative flex items-start justify-between mb-6">
-                    <div className="flex items-center gap-4">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/15 border border-primary/20">
-                        <CheckCircle2 className="text-primary" size={28} />
+                  <div className="relative flex items-start justify-between mb-5 sm:mb-6">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="flex h-11 w-11 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-primary/15 border border-primary/20">
+                        <CheckCircle2 className="text-primary" size={24} />
                       </div>
 
                       <div>
-                        <h3 className="text-white text-xl font-semibold">
+                        <h3 className="text-white text-lg sm:text-xl font-semibold">
                           Thank You!
                         </h3>
                       </div>
@@ -138,38 +138,38 @@ export default function Contact() {
                   </div>
 
                   {/* Content */}
-                  <div className="relative space-y-5">
-                    <p className="text-white/70 text-sm leading-relaxed">
+                  <div className="relative space-y-4 sm:space-y-5">
+                    <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
                       Thank you for reaching out.For faster communication, feel
                       free to contact me directly.
                     </p>
 
-                    <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 space-y-4">
+                    <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 sm:p-5 space-y-3 sm:space-y-4">
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                          <Phone size={18} className="text-primary" />
+                        <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-primary/10">
+                          <Phone size={16} className="text-primary" />
                         </div>
 
                         <div>
-                          <p className="text-white/40 text-xs uppercase tracking-wider">
+                          <p className="text-white/40 text-[10px] sm:text-xs uppercase tracking-wider">
                             Phone
                           </p>
-                          <p className="text-white font-medium">
+                          <p className="text-white text-sm sm:text-base font-medium">
                             +91 9658225382
                           </p>
                         </div>
                       </div>
 
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                          <Mail size={18} className="text-primary" />
+                        <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-primary/10">
+                          <Mail size={16} className="text-primary" />
                         </div>
 
                         <div>
-                          <p className="text-white/40 text-xs uppercase tracking-wider">
+                          <p className="text-white/40 text-[10px] sm:text-xs uppercase tracking-wider">
                             Email
                           </p>
-                          <p className="text-white font-medium break-all">
+                          <p className="text-white text-sm sm:text-base font-medium break-all">
                             {personalInfo.email}
                           </p>
                         </div>
@@ -191,28 +191,28 @@ export default function Contact() {
       </AnimatePresence>
       <section
         id="contact"
-        className="relative py-28 bg-white/[0.01] overflow-hidden"
+        className="relative py-16 sm:py-20 md:py-28 bg-white/[0.01] overflow-hidden"
         aria-labelledby="contact-heading"
       >
         <div className="absolute inset-0 bg-purple-glow opacity-15 pointer-events-none" />
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
           <SectionHeading
             title="Let's Work Together"
             subtitle="Have a project in mind or want to discuss an opportunity? Reach out."
           />
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="flex flex-col gap-5">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
+            <div className="flex flex-col gap-4 sm:gap-5">
               <AnimatedContainer preset="fadeUp">
-                <p className="text-white/55 font-body text-base leading-relaxed">
+                <p className="text-white/55 font-body text-sm sm:text-base leading-relaxed">
                   I'm currently open to full-time roles, Whether it's building a
                   product from scratch or improving an existing system — let's
                   connect!
                 </p>
               </AnimatedContainer>
 
-              <div className="flex flex-col gap-4 mt-2">
+              <div className="flex flex-col gap-3 sm:gap-4 mt-1 sm:mt-2">
                 {contactCards.map((card, i) => {
                   const Icon = card.icon;
                   return (
@@ -227,19 +227,19 @@ export default function Contact() {
                           card.href.startsWith("http") ? "_blank" : undefined
                         }
                         rel="noopener noreferrer"
-                        className={`flex items-center gap-4 p-5 rounded-2xl border ${card.color} ${card.hoverColor} transition-all duration-300 group`}
+                        className={`flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl border ${card.color} ${card.hoverColor} transition-all duration-300 group`}
                         whileHover={{ x: 6 }}
                       >
                         <div
-                          className={`w-12 h-12 rounded-xl ${card.color} flex items-center justify-center shrink-0`}
+                          className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl ${card.color} flex items-center justify-center shrink-0`}
                         >
-                          <Icon size={20} className="text-white/80" />
+                          <Icon size={18} className="text-white/80" />
                         </div>
                         <div>
-                          <p className="text-white/40 font-mono text-xs uppercase tracking-wider">
+                          <p className="text-white/40 font-mono text-[10px] sm:text-xs uppercase tracking-wider">
                             {card.label}
                           </p>
-                          <p className="text-white font-body font-medium group-hover:text-primary transition-colors duration-300">
+                          <p className="text-white font-body text-sm sm:text-base font-medium group-hover:text-primary transition-colors duration-300 break-all">
                             {card.value}
                           </p>
                         </div>
@@ -252,11 +252,11 @@ export default function Contact() {
             <AnimatedContainer preset="slideRight">
               <form
                 onSubmit={handleSubmit}
-                className="p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm flex flex-col gap-5"
+                className="p-5 sm:p-6 md:p-8 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm flex flex-col gap-4 sm:gap-5"
                 aria-label="Contact form"
                 noValidate
               >
-                <div className="grid sm:grid-cols-2 gap-5">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-5">
                   <Field
                     label="Name"
                     name="name"
@@ -293,7 +293,7 @@ export default function Contact() {
                 <div className="flex flex-col gap-1.5">
                   <label
                     htmlFor="message"
-                    className="font-mono text-xs text-white/40 uppercase tracking-wider"
+                    className="font-mono text-[10px] sm:text-xs text-white/40 uppercase tracking-wider"
                   >
                     Message <span className="text-accent">*</span>
                   </label>
@@ -366,7 +366,7 @@ export default function Contact() {
                   </AnimatePresence>
                 </motion.button>
 
-                <p className="text-white/25 font-mono text-xs text-center">
+                <p className="text-white/25 font-mono text-[10px] sm:text-xs text-center">
                   I typically respond within 24 hours.
                 </p>
               </form>
@@ -392,7 +392,7 @@ function Field({
     <div className="flex flex-col gap-1.5">
       <label
         htmlFor={name}
-        className="font-mono text-xs text-white/40 uppercase tracking-wider"
+        className="font-mono text-[10px] sm:text-xs text-white/40 uppercase tracking-wider"
       >
         {label} {required && <span className="text-accent">*</span>}
       </label>
@@ -411,7 +411,7 @@ function Field({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className="w-full bg-white/5 border border-white/10 rounded-xl pl-9 pr-4 py-3 text-white font-body text-sm placeholder-white/25 focus:outline-none focus:border-primary/50 focus:bg-primary/5 transition-all duration-300"
+          className="w-full bg-white/5 border border-white/10 rounded-xl pl-9 pr-4 py-2.5 sm:py-3 text-white font-body text-sm placeholder-white/25 focus:outline-none focus:border-primary/50 focus:bg-primary/5 transition-all duration-300"
         />
       </div>
     </div>
