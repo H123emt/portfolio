@@ -38,7 +38,7 @@ export const skillGroups = [
   {
     category: "Backend",
     icon: "Server",
-    skills: ["java", "Node.js", "Express", "FastAPI", "REST APIs", "WebSockets"],
+    skills: ["java", "Node.js", "Express","PHP","REST APIs", "WebSockets"],
   },
   {
     category: "Database",
@@ -49,7 +49,7 @@ export const skillGroups = [
   {
     category: "Tools",
     icon: "Wrench",
-    skills: ["Git", "Figma", "Postman", "VS Code"],
+    skills: ["Github", "Figma", "Postman", "VS Code"],
   },
 ];
 
@@ -66,8 +66,8 @@ export const experiences = [
   {
     id: 2,
     company: "Visital Technologies",
-    role: "React Developer",
-    duration: "April,2025 - Jan,2026",
+    role: "MERN stack Developer",
+    duration: "April,2025 - March,2026",
     location: "Bhubaneswar,Odisha",
     description:
       "Developed responsive frontend interfaces using React.js, collaborating with senior developers and designers to improve user experience and application performance.",
